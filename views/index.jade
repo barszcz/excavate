@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul
+    each val in status
+      li
+        p= val['name']
+        p= val['status']
+        p!= val['text']
